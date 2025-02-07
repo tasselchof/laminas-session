@@ -46,7 +46,7 @@
         "laminas/laminas-http": "^2.20",
         "laminas/laminas-validator": "^2.64.1",
         "mongodb/mongodb": "~1.20.0",
-        "phpunit/phpunit": "^10.5.38",
+        "phpunit/phpunit": "^12.0.0",
         "psalm/plugin-phpunit": "^0.19.0",
         "vimeo/psalm": "^5.26.1"
     },
