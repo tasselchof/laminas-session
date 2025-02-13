@@ -17,24 +17,18 @@ class Cache implements SaveHandlerInterface
     /**
      * Session Save Path
      */
-    protected string $sessionSavePath;
+    protected ?string $sessionSavePath = null;
 
     /**
      * Session Name
      */
-    protected string $sessionName;
-
-    /**
-     * The cache storage
-     */
-    protected CacheStorage $cacheStorage;
+    protected ?string $sessionName = null;
 
     /**
      * Constructor
      */
-    public function __construct(CacheStorage $cacheStorage)
+    public function __construct(protected CacheStorage $cacheStorage)
     {
-        $this->setCacheStorage($cacheStorage);
     }
 
     /**
@@ -113,15 +107,6 @@ class Cache implements SaveHandlerInterface
             return $cache->clearExpired();
         }
         return true;
-    }
-
-    /**
-     * Set cache storage
-     */
-    public function setCacheStorage(CacheStorage $cacheStorage): Cache
-    {
-        $this->cacheStorage = $cacheStorage;
-        return $this;
     }
 
     /**

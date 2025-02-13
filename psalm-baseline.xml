@@ -449,10 +449,6 @@
     <PossiblyUnusedReturnValue>
       <code><![CDATA[bool]]></code>
     </PossiblyUnusedReturnValue>
-    <PropertyNotSetInConstructor>
-      <code><![CDATA[$sessionName]]></code>
-      <code><![CDATA[$sessionSavePath]]></code>
-    </PropertyNotSetInConstructor>
   </file>
   <file src="src/SaveHandler/DbTableGateway.php">
     <ImplementedReturnTypeMismatch>
@@ -962,11 +958,6 @@
     <UndefinedDocblockClass>
       <code><![CDATA[CallbackHandler]]></code>
     </UndefinedDocblockClass>
-  </file>
-  <file src="src/Validator/Csrf.php">
-    <MixedArgumentTypeCoercion>
-      <code><![CDATA[$options]]></code>
-    </MixedArgumentTypeCoercion>
   </file>
   <file src="src/Validator/HttpUserAgent.php">
     <PossiblyNullPropertyAssignmentValue>
