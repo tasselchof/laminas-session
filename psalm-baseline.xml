@@ -1620,14 +1620,6 @@
       <code><![CDATA[close]]></code>
     </PossiblyUnusedMethod>
   </file>
-  <file src="test/Validator/CsrfTest.php">
-    <DocblockTypeContradiction>
-      <code><![CDATA[$container->hash]]></code>
-    </DocblockTypeContradiction>
-    <TypeDoesNotContainType>
-      <code><![CDATA[assertIsString]]></code>
-    </TypeDoesNotContainType>
-  </file>
   <file src="test/Validator/IdTest.php">
     <PossiblyUnusedMethod>
       <code><![CDATA[id]]></code>
